@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    float: left;
+    color: gainsboro;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+header h1 span {
+    color: crimson;
+}
+
+nav ul {
+    list-style: none;
+    text-align: end;
+    padding: 7px;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Home Section */
+
+.hero {
+    padding: 105px 0;
+    text-align: center;
+    background-image: url(img/QueenCeremonyB.jpg);
+    color: gainsboro;
+}
+
+.profile-image {
+    width: 350px;
+    border-radius: 10%;
+}
+
+.button-about {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button-sertif {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(76, 76, 67);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button-sertifikat {
+    text-align: center;
+}
+
+#about {
+    padding: 20px 0;
+    background-color: gainsboro;
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#Learn {
+    font-size: 3rem;
+    font-weight: 0.5rem 0 1rem;
+}
+
+.gambar-about img {
+    width: 70%;
+}
+
+.gambar-about {
+    display: flex;
+    justify-content: center;
+}
+
+#featured-projects {
+    padding: 85px 0;
+    background-color: beige;
+}
+
+.portfolio {
+    padding: 20px 0;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(210, 210, 188);
+    box-shadow: 0 4px 8px 0 rgba(168, 161, 161, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.project-image{
+    width: 350px;
+    border-radius: 15px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Home Section End */
+/* About Section */
+
+.about {
+    padding: 55px 0;
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.muka-about {
+    text-align: center;
+}
+
+.muka-about img {
+    width: 375px;
+    border-radius: 25px;
+}
+
+/* About Section End */
+/* Portofolio Section */
+.H2-porto {
+    text-align: center;
+    background-color: beige;
+    padding: 15px;
+}
+.portfolio {
+    padding: 50px;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.profile-image2 {
+    width: 290px;
+    border-radius: 10%;
+}
+
+.profile-image3 {
+    width: 450px;
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+    main{
+        flex-flow: column nowrap;
+    }
+
+    main aside{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        justify-content: center;
+    }
+
+    main aside{
+        align-self: stretch;
+    }
+}
